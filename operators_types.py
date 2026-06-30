@@ -1,40 +1,49 @@
-# Arithmetic Operators
+# Assignment Operators
 
-a = 25
-b = 4
+a = 48
 
-print("Arithmetic Operators")
-print("----------------------")
-print("Addition :", a + b)
-print("Subtraction :", a - b)
-print("Multiplication :", a * b)
-print("Division :", a / b)
-print("Floor Division :", a // b)
-print("Modulus :", a % b)
-print("Exponent :", a ** b)
+print("Assignment Operators")
+print("---------------------")
 
-print()
+a += 12
+print("+= :", a)
 
-# Comparison Operators
+a -= 10
+print("-= :", a)
 
-print("Comparison Operators")
-print("----------------------")
-print(a > b)
-print(a < b)
-print(a == b)
-print(a != b)
-print(a >= b)
-print(a <= b)
+a *= 3
+print("*= :", a)
+
+a /= 5
+print("/= :", a)
+
+a %=16
+print("%= :",a)
 
 print()
 
-# Logical Operators
+# Membership Operators
 
-x = 15
-y = 8
+colors = ["Red", "Blue", "Green"]
 
-print("Logical Operators")
-print("----------------------")
-print(x > 10 and y < 10)
-print(x < 10 or y < 10)
-print(not(x == y))
+print("Membership Operators")
+print("---------------------")
+
+print("Blue" in colors)
+print("Black" in colors)
+print("Black" not in colors)
+
+print()
+
+# Identity Operators
+
+x = [5, 15, 25]
+y = x
+z = [5, 15, 25]
+
+print("Identity Operators")
+print("---------------------")
+
+print(x is y)
+print(x is z)
+print(x is not z)
